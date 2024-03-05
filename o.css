@@ -34,3 +34,12 @@ p {
 	text-indent: 40px;
 	text-decoration: underline;
 }
+button {
+	box-shadow: 0 0 3px rgb(211, 158, 109),
+	0 0 20px rgb(211, 158, 109);
+}
+button:hover {
+	box-shadow: 0 0 3px rgb(211, 158, 109),
+	0 0 20px rgb(211, 158, 109), 0 0 40px rgb(211, 158, 109),
+	0 0 80px rgb(211, 158, 109);
+}
