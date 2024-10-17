@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.menu, .icons{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    justify-content: space-between;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.logo{
+    height: 150px;
+    width: 150px;
+}
