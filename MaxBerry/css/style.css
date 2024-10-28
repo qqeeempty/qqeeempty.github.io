@@ -5,21 +5,22 @@
     border: 1px solid;
 }
 
-.menu, .icons{
+.menu{
     display: flex;
     align-items: center;
 }
 
 .menu{
     justify-content: space-between;
+    width: 500px;
 }
 
 .icon{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .logo{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }

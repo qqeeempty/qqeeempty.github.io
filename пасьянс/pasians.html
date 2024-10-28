@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anim{
+            0%{transform: rotate(90deg);}
+            100%{transform: rotate(0);}
+        }
+        img{
+            width: 100px;
+            animation: anim 1s;
+        }
+        #table{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div onclick="show()">
+        <img src="carta.jpg">
+    </div>
+    <div id='table'></div>
+    <script>
+        let card_name=['cartafront.png', '6.jpg', '7.jpg',
+         '8.png', '9.png', '10.gif', 'вал.gif',
+          'дама.jpg', 'кор.jpg', 'туз.jpg'];
+
+        let table = document.getElementById('table');
+        function show(){
+            let card = document.createElement('div');
+            let card_file_name = '<img src="' + card_name[4] + '">';
+            card.innerHTML = card_file_name;
+            table.append(card);
+        }
+    </script>
+</body>
+</html>
