@@ -6,6 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-  
+    <script>
+        let city_name = ['Щёлково', 'Нью-Йорк', 'Токио', 'Рио-де-Жанейро', 'Дубай'];
+        let cost = [500, 750, 920, 650, 1100];
+
+        let img = ['img/sch.jpg', 'img/new-york.jpg', 'img/tokio.jpeg', 'img/rio.jpg', 'img/dubai.jpg'];
+
+        let diagram = document.createElement('div');
+        diagram.style.display = 'flex';
+        diagram.style.color = 'white';
+        diagram.style.alignItems = 'flex-end';
+        document.body.append(diagram);
+
+        for (let i=0; i < 5; i++){
+            let city = document.createElement('div');
+            city.style.width = '100px';
+            city.style.height = cost[i] +'px';
+            city.style.backgroundImage = 'url('+img[i]+')';
+            city.style.margin = '10px';
+            city.innerHTML = city_name[i] +'<br>' + cost[i];
+            diagram.append(city);
+        }
+
+    </script>
 </body>
 </html>
